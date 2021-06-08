@@ -1,0 +1,14 @@
+
+runtime: python38
+entrypoint: gunicorn -b :$PORT main:app
+instance_class: F2
+#api_version: 1
+#threadsafe: yes
+
+#handlers:
+#- url: .*
+#  script: main.app
+#
+#libraries:
+#- name: Flask
+#  version: "2.0.1"
